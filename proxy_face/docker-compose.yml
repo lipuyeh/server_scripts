@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  web:
+    container_name: ubuntu_ppp0_face
+    image: ubuntu:20.04
+    volumes:
+    ports:
+      - "3128:3128"
+    environment:
+    networks:
+      - dsl_network
+    depends_on:
+    restart: always
+
+
+
